@@ -1,0 +1,36 @@
+.image-container {
+    flex: 1;
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .left, .middle, .right {
+        flex: 1;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        min-height: 10rem;
+    }
+    .left {
+        clip-path: polygon(0% 0%, 7% 0%, 47% 100%, 0% 100%);
+        // background-image: url('<Your image path>');
+        background-position: 50% 50%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .middle {
+        // background-image: url('<Your image path>');
+        clip-path: polygon(8% 0%, 48% 100%, 92% 100%, 52% 0%);
+        background-position: 50% 50%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .right {
+        clip-path: polygon(100% 00%, 53% 0%, 93% 100%, 100% 100%);
+        // background-image: url('<Your image path>');
+        background-position: 50% 50%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
